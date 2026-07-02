@@ -49,7 +49,7 @@ def main():
         return
 
     print(f"\nTotal review : {len(df)}")
-    print(f"Rata-rata    : {df['score'].mean():.2f} ⭐")
+    print(f"Rata-rata    : {df['score'].mean():.2f} ")
 
     filename = args.output or f"shopee_reviews_{datetime.now():%Y%m%d_%H%M%S}.csv"
     df.to_csv(filename, index=False, encoding="utf-8-sig")
